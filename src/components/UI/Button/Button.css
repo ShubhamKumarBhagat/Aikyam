@@ -1,0 +1,19 @@
+.button {
+  font-family: montserrat;
+  width:fit-content;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.8rem;
+  border: none;
+  box-shadow: 1px 1px 5px 2px rgb(8, 8, 8);
+  font-weight: 500;
+  font-size: 2rem;
+  
+}
+.button:hover {
+  cursor: pointer;
+}
+.button:active {
+  box-shadow: none;
+  transform:translateY(5%);
+}
+

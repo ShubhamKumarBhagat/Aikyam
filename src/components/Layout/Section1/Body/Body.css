@@ -1,0 +1,114 @@
+.bdy {
+  animation: color-gradient 10s infinite ease-in-out;
+  padding: 2rem 2rem 4rem;
+}
+.sec1-bdy {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sec1-bdy__heading {
+  font-family: courgette;
+  /* animation: color-gradient1 10s infinite ease-in-out; */
+
+  color: rgb(255, 255, 255);
+  font-size: 8rem;
+  text-shadow: 0.2rem 0.2rem 0rem #000000;
+  text-decoration: underline;
+  margin: 1rem;
+}
+.sec1-bdy__intro {
+  font-family: ubuntu;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 1rem;
+  max-width: 40vw;
+}
+.sec1-bdy__image {
+  width: 27rem;
+  height: 27rem;
+  max-width: 40vw;
+  max-height: 40vw;
+  border-radius: 25rem;
+  animation: rotate 5s infinite;
+  box-shadow: -2px 2px 10px 5px #000000b0;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.sec1-bdy__image:active {
+  animation-play-state: paused;
+  transform: translateY(1%);
+  box-shadow: none;
+}
+.button__latest-edition-smallscreen{
+  display: none;
+}
+.button__latest-edition,.button__latest-edition-smallscreen {
+  
+  background-color: rgba(180, 3, 12, 0.973);
+  color: rgb(255, 230, 4);
+  margin:1.5rem 1rem;
+  
+}
+.button__latest-edition:hover,.button__latest-edition-smallscreen:hover {
+  background-color: rgb(253, 0, 0);
+
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes color-gradient {
+  0%,
+  100% {
+    background-color: rgb(255, 187, 0);
+  }
+  25%,
+  75% {
+    background-color: rgb(255, 238, 0);
+  }
+  50% {
+    background-color: rgb(255, 145, 0);
+  }
+}
+@keyframes color-gradient1 {
+  0%,
+  100% {
+    color: rgb(8, 8, 8);
+  }
+  25%,
+  75% {
+    color: rgb(255, 0, 55);
+  }
+  50% {
+    color: rgb(255, 0, 0);
+  }
+}
+@media only screen and (max-width: 150vh) {
+  .sec1-bdy {
+    flex-direction: column;
+  }
+  .sec1-bdy__intro {
+    max-width: none;
+    font-size: 2.5rem;
+  }
+  .sec1-bdy__image {
+    max-width: 70vw;
+    max-height: 70vw;
+  }
+  .button__latest-edition{
+    display: none;
+  }
+  .button__latest-edition-smallscreen{
+    display: initial;
+    margin: 3rem;
+  }
+}
