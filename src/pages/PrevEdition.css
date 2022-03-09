@@ -1,0 +1,19 @@
+.preveditions{
+    text-align: center;
+    min-height: 100vh;
+    padding: 0 0 2rem;
+    background-color:rgb(255, 145, 1);
+}
+
+.verticaltimeline__elements{
+    text-decoration: none;
+    font-family: ubuntu;
+    color:yellow;
+    font-size:5rem;
+    display: block;
+    padding:2rem;
+    
+}
+.verticaltimeline__elements:hover{
+    background-color: rgb(114, 24, 2);
+}
