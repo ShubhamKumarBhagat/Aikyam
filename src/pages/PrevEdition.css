@@ -15,5 +15,13 @@
     
 }
 .verticaltimeline__elements:hover{
-    background-color: rgb(114, 24, 2);
+    background-color: rgb(168, 20, 1);
+}
+.prevedition__head{
+    font-size: 400%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2rem;
+    color: rgb(73, 12, 1);
+    letter-spacing: 0.5rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem rgb(94, 0, 0);
 }

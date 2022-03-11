@@ -1,79 +1,80 @@
-.sec1-header{
-    display: flex;
-    justify-content:right;
-    position: sticky;
-    top:0;
-    z-index: 1;
-    height: 4.5rem;
-    align-items: center;
-    background-image:linear-gradient(to right,rgb(65, 65, 65),rgb(27, 27, 27),black );
-    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.5);
+.sec1-header {
+  display: flex;
+  justify-content: right;
+  /* position: sticky;
+    top:0; */
+  z-index: 1;
+  height: 4.5rem;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(65, 65, 65),
+    rgb(27, 27, 27),
+    black
+  );
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.5);
 }
 
-.sec1-header__link{
-    margin:0 0.5rem;
-    text-decoration: none;
-    color: white;
-    font-family: 'montserrat';
-    font-size: 1.3rem;
-    padding:0.5rem 1rem;
-    
+.sec1-header__link {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: white;
+  font-family: "montserrat";
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
 }
 
-.sec1-header__link:hover{
-    color:black;
-    background-color: rgb(255, 238, 2);
-    
-    border-radius: 0.8rem;
+.sec1-header__link:hover {
+  color: black;
+  background-color: rgb(255, 238, 2);
+
+  border-radius: 0.8rem;
 }
 
-svg{
-    height:2rem;
-    fill:yellow;
-    border: solid yellow 1px;
-    padding: 0.25rem 0.5rem;
-    border-radius: 0.5rem;
-    margin: 0 1rem;
-    transition-duration: 150ms;
-    display:none;
-
+svg {
+  height: 2rem;
+  fill: yellow;
+  border: solid yellow 1px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  margin: 0 1rem;
+  transition-duration: 150ms;
+  display: none;
 }
-svg:active{
-    background-color: yellow;
-    fill: black;
+svg:active {
+  background-color: yellow;
+  fill: black;
 }
-@media only screen and (max-width:100vh) {
-    svg{
-        display: initial;
-        align-self: flex-end;
-        margin:1rem;
-    }
+@media only screen and (max-width: 100vh) {
+  svg {
+    display: initial;
+    align-self: flex-end;
+    margin: 1rem;
+  }
 
-    .sec1-header{
-        flex-direction: column;
-        
-        height: auto;
-    }
-    .sec1-header__link{
-        display:block;
-        border-top: solid yellow;
-        color: yellow;
-        width: 100vw;
-        padding:1rem 0;
-        margin: 0;
-        font-size: x-large;
-    }
-    .sec1-header__link:active{
-        border-radius:0 ;
-    
-    }
-    .sec1-header{
-        
-        background-color: black;
-        background-image: none;
-    }
-    .not-small-nav{
-        display: none;
-    }
-    
+  .sec1-header {
+    flex-direction: column;
+
+    height: auto;
+  }
+  .sec1-header__link {
+    display: block;
+    border-top: solid yellow;
+    color: yellow;
+    width: 100vw;
+    padding: 1rem 0;
+    margin: 0;
+    font-size: x-large;
+    border-radius: 0;
+  }
+  .sec1-header__link:hover {
+    border-radius: 0;
+  }
+  .sec1-header {
+    background-color: black;
+    background-image: none;
+  }
+  .not-small-nav {
+    display: none;
+  }
 }
